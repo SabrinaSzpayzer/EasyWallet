@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #293241;
+    font-family: 'Rowdies', cursive;
+    color: #E0FBFC;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    background-color: #E0FBFC;
+    font-family: 'Lato', sans-serif;
+    color: #293241;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seccionToggleT, #seccionToggleDe, #seccionToggleDo {
+    background-color: #98C1D9;
+    border-style: double;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.botonSeccion {
+    background-color: #3D5A80;
+    color: #E0FBFC;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-color: #98C1D9;
+    border-radius: 0.7rem;
+}
+
+#btnSesion {
+    background-color: #98C1D9;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #293241;
+    border-style: double;
+    border-color: #3D5A80;
+    border-radius: 0.7rem;
+}
+
+#seccionToggleT, #seccionToggleDe, #seccionToggleDo { 
+    height: auto;
+    display: none;
+}
+
+.titulo {
+    background-color: #E0FBFC;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #EE6C4D;
+    border-radius: 0.7rem;
+}
+
+.pSaldo {
+    color: #EE6C4D;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#saldo, #saldoD {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    background-color: #293241;
+    font-family: 'Lato', sans-serif;
+    color: #E0FBFC;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*Color palette: https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+3d5a80
+98c1d9
+e0fbfc
+ee6c4d
+293241*/

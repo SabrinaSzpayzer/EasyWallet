@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Link Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>EasyWallet | Billetera Virtual</title>
+</head>
+<body>
+    <header class="header">
+        <h1>EasyWallet</h1>
+    </header>
+    <main>
+        <!--Saldo Actual-->
+        <section>
+            <div id="saldo">
+                <h2 class="titulo">Saldo en Pesos:</h2>
+            </div>
+            <div id="saldoD">
+                <h2 class="titulo">Saldo en Dólares:</h2>
+            </div>
+        </section>
+          
+        <!--Transferencias-->
+        <section class="seccion">
+            <button class="botonSeccion" id="btnSeccionT">Transferencias</button>
+            <div id="seccionToggleT">
+                <form>
+                    <div class="mb-3">
+                        <label for="montoTransferencia" class="form-label">Ingrese el monto a transferir:</label>
+                        <input type="number" class="form-control" id="montoTransferencia">
+                    </div>
+                    <select class="form-select" id="listadoDestinatarios">
+                        <option value="seleccione" selected>Seleccione el destinatario de su agenda:</option>
+                    </select>
+                    <button type="button" id="btnActualizarAgenda">Actualizar Agenda de Destinatarios</button>
+                    <button type="button" class="btn btn-primary" id="btnTransferir">Transferir</button>
+                    <p>Solo pueden hacerse transferencias a destinatarios agregados a la agenda. Si usted ya agregó uno o más destinatarios a la agenda, debe hacer click en el botón "Actualizar Agenda de Destinatarios" para actualizarla.</p>       
+                </form>
+                <div class="mensajeTransferencia">
+                </div>
+            </div>
+        </section>
+
+        <!--Agenda de Destinatarios-->
+        <section class="seccion">
+            <button class="botonSeccion" id="btnSeccionDe">Agregar Destinatario de Transferencias</button>
+            <div id="seccionToggleDe">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre / Apodo del destinatario:</label>
+                        <input type="text" class="form-control" id="nombreDestinatario">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cbu" class="form-label">CBU / CVU del destinatario:</label>
+                        <input type="number" class="form-control" id="cbuDestinatario">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnAgenda">Agregar Destinatario</button>
+                </form>
+                <div class="mensajeAgenda">
+                </div>
+            </div>
+        </section>
+
+        <!--Comprar Dólares-->
+        <section class="seccion">
+            <button class="botonSeccion" id="btnSeccionDo">Comprar Dólares</button>
+            <div id="seccionToggleDo">
+                <form>
+                    <div class="mb-3">
+                        <label for="montoCompra" class="form-label">Ingrese el monto en pesos para comprar dólares:</label>
+                        <input type="number" class="form-control" id="montoCompra">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnDolares">Comprar Dólares</button>
+                </form>
+                <div class="mensajeDolares">
+                </div>
+            </div>
+        </section>
+        
+        <!--Cerrar Sesión-->
+        <section>
+            <button id="btnSesion">Cerrar Sesión</button>
+        </section> 
+    </main>
+    <footer class="footer">
+        <p>© Todos los derechos reservados.</p>
+    </footer>
+    <!--JS y Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
